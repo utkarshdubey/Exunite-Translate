@@ -49,6 +49,12 @@ h1{
     box-sizing: border-box;
     border-radius: 15px 50px;
 }
+.guide{
+    height: 50px;
+    width: 50px;
+    background: white;
+    border-radius: 100%;
+}
 /* Buttons */
 
 
