@@ -1,0 +1,115 @@
+/* Imports for Fonts */
+@import url('https://fonts.googleapis.com/css?family=Chivo&display=swap');
+
+/* Globals */
+html, body{
+    font-family: 'Chivo', sans-serif;
+    overflow: hidden;
+}
+
+/* Variables */
+:root{
+    --primary-color: #2977f5;
+}
+
+h1{
+    font-family: 'Chivo', sans-serif;
+    color: var(--primary-color);
+}
+
+.hero-title{
+    font-weight: bolder;
+    letter-spacing: 0.2rem;
+    text-transform: lowercase;
+    background: rgba(41,139,245,.07);   
+    /* animation: glitch 2s infinite; */
+}
+
+.hero-typed{
+    font-size: 2.5rem;
+}
+
+
+/* Execution */
+.execution{
+    background: var(--primary-color);
+    height: 100%;
+    width: 100%;
+    padding-bottom: 100%;
+}
+
+.form-group{
+    padding-top: 13%;
+}
+
+.form-group-textarea{
+    font-family: 'Chivo', sans-serif;
+    font-size: 2.5rem;
+    height: 22.5rem;
+    box-sizing: border-box;
+    border-radius: 15px 50px;
+}
+/* Buttons */
+
+
+
+
+
+
+
+/* Keyframes */
+/* @keyframes glitch {
+    0% {
+      transform: none;
+      opacity: 1;
+    }
+    7% {
+      transform: skew(-0.5deg, -0.9deg);
+      opacity: 0.75;
+    }
+    10% {
+      transform: none;
+      opacity: 1;
+    }
+    27% {
+      transform: none;
+      opacity: 1;
+    }
+    30% {
+      transform: skew(0.8deg, -0.1deg);
+      opacity: 0.75;
+    }
+    35% {
+      transform: none;
+      opacity: 1;
+    }
+    52% {
+      transform: none;
+      opacity: 1;
+    }
+    55% {
+      transform: skew(-1deg, 0.2deg);
+      opacity: 0.75;
+    }
+    50% {
+      transform: none;
+      opacity: 1;
+    }
+    72% {
+      transform: none;
+      opacity: 1;
+    }
+    75% {
+      transform: skew(0.4deg, 1deg);
+      opacity: 0.75;
+    }
+    80% {
+      transform: none;
+      opacity: 1;
+    }
+    100% {
+      transform: none;
+      opacity: 1;
+    }
+  }
+   */
