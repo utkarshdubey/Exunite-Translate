@@ -2,69 +2,176 @@
 @import url('https://fonts.googleapis.com/css?family=Chivo&display=swap');
 
 /* Globals */
-html, body{
-    font-family: 'Chivo', sans-serif;
-    overflow: hidden;
+html,
+body {
+  font-family: 'Chivo', sans-serif;
+  /* overflow: hidden; */
 }
 
 /* Variables */
-:root{
-    --primary-color: #2977f5;
+:root {
+  --primary-color: #2977f5;
+  --secondary-color: rgba(41, 139, 245, .07);
+  --tertiary-color: #298bf5;
 }
 
-h1{
-    font-family: 'Chivo', sans-serif;
-    color: var(--primary-color);
+hr {
+  background: var(--primary-color);
 }
 
-.hero-title{
-    font-weight: bolder;
-    letter-spacing: 0.2rem;
-    text-transform: lowercase;
-    background: rgba(41,139,245,.07);   
-    /* animation: glitch 2s infinite; */
+h1 {
+  font-family: 'Chivo', sans-serif;
+  color: var(--primary-color);
 }
 
-.hero-typed{
-    font-size: 2.5rem;
+.hero {
+  background: var(--secondary-color);
+}
+
+.hero-title {
+  font-weight: bolder;
+  letter-spacing: 0.2rem;
+  text-transform: capitalize;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  /* animation: glitch 2s infinite; */
+}
+
+.hero-typed {
+  font-size: 2.5rem;
 }
 
 
 /* Execution */
-.execution{
-    background: var(--primary-color);
-    height: 100%;
-    width: 100%;
-    padding-bottom: 100%;
+.execution {
+  background: var(--primary-color);
+  height: 100%;
+  width: 100%;
+  padding-bottom: 100%;
 }
 
-.form-group{
-    padding-top: 13%;
+.form-group {
+  padding-top: 13%;
 }
 
-.form-group-textarea{
-    font-family: 'Chivo', sans-serif;
-    font-size: 2.5rem;
-    height: 22.5rem;
-    box-sizing: border-box;
-    border-radius: 15px 50px;
+.form-group-textarea {
+  font-family: 'Chivo', sans-serif;
+  font-size: 2.5rem;
+  height: 22.5rem;
+  box-sizing: border-box;
+  border-radius: 15px 50px;
 }
-.guide{
-    height: 50px;
-    width: 50px;
-    background: white;
-    border-radius: 100%;
+
+.guide {
+  height: 50px;
+  width: 50px;
+  background: white;
+  border-radius: 100%;
+}
+
+.shell {
+  height: 70%;
+  width: 70%;
+}
+
+.logo{
+  padding-bottom: 2.5%;
+  height: 80%;
+  width: 80%;
+}
+
+a.link{
+  color: var(--primary-color);
+  text-decoration: none;
+}
+a.link:hover{
+  color: var(--tertiary-color);
 }
 /* Buttons */
+.btn,
+button,
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+  font-family: 'Raleway', sans-serif;
+  display: inline-block;
+  height: 38px;
+  padding: 0 30px;
+  color: var(--primary-color);
+  text-align: center;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 38px;
+  letter-spacing: .1rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  white-space: nowrap;
+  background-color: transparent;
+  border-radius: 4px;
+  border: 1px solid #bbb;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+.btn:hover,
+button:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+input[type="button"]:hover,
+.btn:focus,
+button:focus,
+input[type="submit"]:focus,
+input[type="reset"]:focus,
+input[type="button"]:focus {
+  color: #333;
+  border-color: #888;
+  outline: 0;
+}
+
+.btn.btn-primary,
+button.btn-primary,
+input[type="submit"].btn-primary,
+input[type="reset"].btn-primary,
+input[type="button"].btn-primary {
+  color: #FFF;
+  background-color: var(--tertiary-color);
+  border: var(--secondary-color);
+}
+
+.btn.btn-primary:hover,
+button.btn-primary:hover,
+input[type="submit"].btn-primary:hover,
+input[type="reset"].btn-primary:hover,
+input[type="button"].btn-primary:hover,
+.btn.btn-primary:focus,
+button.btn-primary:focus,
+input[type="submit"].btn-primary:focus,
+input[type="reset"].btn-primary:focus,
+input[type="button"].btn-primary:focus {
+  color: #FFF;
+  background-color: var(--primary-color);
+      border-color: var(--primary-color);
+    }
+
+    /* Media Queries */
+    @media only screen and (max-width: 540px) {
+      .shell {
+        height: 30%;
+        width: 30%;
+      }
+    }
+
+    @media only screen and (min-width: 992px){
+      html, body{
+        overflow: hidden;
+      }
+    }
 
 
 
-
-
-
-
-/* Keyframes */
-/* @keyframes glitch {
+    /* Keyframes */
+    /* @keyframes glitch {
     0% {
       transform: none;
       opacity: 1;
