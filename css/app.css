@@ -13,6 +13,7 @@ body {
   --primary-color: #2977f5;
   --secondary-color: rgba(41, 139, 245, .07);
   --tertiary-color: #298bf5;
+  --fourth-color: #0F111A;
 }
 
 hr {
@@ -37,18 +38,50 @@ h1 {
   padding-bottom: 10px;
   /* animation: glitch 2s infinite; */
 }
+.hero-title:hover{
+  animation: 2s tada infinite;
+}
 
 .hero-typed {
   font-size: 2.5rem;
 }
 
+/* Tooltips */
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: #fff;
+  color: var(--primary-color);
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+  position: absolute;
+  z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+/* Utilities */
+.copy {
+  margin-top: 1rem;
+  height: 50px;
+  width: 50px;
+}
 
 /* Execution */
 .execution {
   background: var(--primary-color);
   height: 100%;
   width: 100%;
-  padding-bottom: 100%;
+  padding-bottom: 1rem;
 }
 
 .form-group {
@@ -68,6 +101,7 @@ h1 {
   width: 50px;
   background: white;
   border-radius: 100%;
+  animation: 2s tada infinite;
 }
 
 .shell {
@@ -75,19 +109,21 @@ h1 {
   width: 70%;
 }
 
-.logo{
+.logo {
   padding-bottom: 2.5%;
   height: 80%;
   width: 80%;
 }
 
-a.link{
+a.link {
   color: var(--primary-color);
   text-decoration: none;
 }
-a.link:hover{
+
+a.link:hover {
   color: var(--tertiary-color);
 }
+
 /* Buttons */
 .btn,
 button,
@@ -151,27 +187,29 @@ input[type="reset"].btn-primary:focus,
 input[type="button"].btn-primary:focus {
   color: #FFF;
   background-color: var(--primary-color);
-      border-color: var(--primary-color);
-    }
+  border-color: var(--primary-color);
+}
 
-    /* Media Queries */
-    @media only screen and (max-width: 540px) {
-      .shell {
-        height: 30%;
-        width: 30%;
-      }
-    }
+/* Media Queries */
+@media only screen and (max-width: 540px) {
+  .shell {
+    height: 30%;
+    width: 30%;
+  }
+}
 
-    @media only screen and (min-width: 992px){
-      html, body{
-        overflow: hidden;
-      }
-    }
+@media only screen and (min-width: 992px) {
+
+  html,
+  body {
+    overflow: hidden;
+  }
+}
 
 
 
-    /* Keyframes */
-    /* @keyframes glitch {
+/* Keyframes */
+/* @keyframes glitch {
     0% {
       transform: none;
       opacity: 1;

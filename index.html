@@ -14,6 +14,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="./css/app.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/tippy.js@5/dist/backdrop.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
 </head>
 
 <body>
@@ -24,7 +26,7 @@
         <div class="six columns information">
             <div class="container">
 
-                <div class="hero">
+                <div class="hero animated slideInLeft">
                     <h1 class="hero-title">Exunite Translator</h1>
                 </div>
                 <hr>
@@ -43,14 +45,15 @@
                     </div>
                 </div>
                 <center>
-                    <img src="./img/art.svg" class="logo">
+                    <img src="./img/art.svg" class="logo animated jackInTheBox" draggable="false">
                 </center>
-                <div class="button-group">
+                <div class="button-group animated fadeIn">
                     <button class="btn btn-primary u-full-width">Translate</button>
                     <button class="btn u-full-width">Toggle Live Preview</button>
                 </div>
                 <div class="credits">
-                    <span>Made with ❤️ and ☕, by <a href="http://technocon.xyz" class="link">Team DPS Indore - Utkarsh Dubey & Bhavesh Pareek</a></span>
+                    <span>Made with ❤️ and ☕, by <a href="http://technocon.xyz" class="link">Team DPS Indore - Utkarsh
+                            Dubey & Bhavesh Pareek</a></span>
                 </div>
             </div>
         </div>
@@ -62,20 +65,26 @@
                             <img src="./img/boy.png" class="guide">
                         </div>
                         <div class="ten columns">
-                            <textarea class="form-group-textarea u-full-width"
+                            <textarea class="form-group-textarea u-full-width animated zoomInUp"
                                 placeholder="Type something you'd like to get translated."></textarea>
                         </div>
                     </div>
                     <div class="row">
                         <div class="ten columns">
-                            <textarea class="form-group-textarea u-full-width"
+                            <textarea class="form-group-textarea u-full-width animated zoomInUp"
                                 placeholder="Translated text will appear here." disabled="disabled"></textarea>
-
                         </div>
                         <div class="two columns">
-                            <img src="./img/alien.png" class="guide">
+                            <img src="./img/alien.png" class="guide" draggable="false">
+                            <br>
+                            <img src="./img/copy.png" class="copy" draggable="false" data-clipboard-text="Hehe">
                         </div>
                     </div>
+                    <h3 style="color:white;">
+                        <blockquote>
+                            &quot;Are avesome. You guys zorp.&quot;
+                        </blockquote>
+                        </h1>
                 </div>
             </div>
         </div>
