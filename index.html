@@ -9,41 +9,37 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="keywords" content="exunite translator, exunite" />
-    <meta name="description" content="A translator built by DPS Indore, for Exun 2019." />
+    <meta name="keywords" content="exunite translator, exunite">
+    <meta name="description" content="A translator built by DPS Indore, for Exun 2019.">
     <meta name="subject" content="Exunite - Translate from English to Exunite">
     <meta name="copyright" content="Technocon">
     <meta name="language" content="EN">
-    <meta name="robots" content="index,follow" />
+    <meta name="robots" content="index,follow">
     <meta name="author" content="Utkarsh & Bhavesh, utkarsh.dubey3jan@gmail.com">
     <meta http-equiv="Cache-Control" content="no-cache">
     <title>Exunite Translator</title>
     <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="./css/app.css">
     <link rel="stylesheet" href="./css/skeleton.css">
     <link rel="stylesheet" href="./css/animate.css">
+    <link rel="shortcut icon" href="favicon.ico">
 </head>
 
 <body>
     <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
+    <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+<![endif]-->
     <div class="row">
         <div class="six columns information">
             <div class="container">
-
                 <div class="hero animated slideInLeft">
                     <h1 class="hero-title">Exunite Translator</h1>
                 </div>
                 <hr>
-
                 <div class="row">
                     <div class="two columns">
-
-                        <center>
-                            <img src="./img/shell.png" class="shell" alt="logo">
-                        </center>
+                        <center><img src="./img/shell.png" class="shell" alt="logo"></center>
                     </div>
                     <div class="ten columns">
                         <div id="typedJSWrapper">
@@ -51,53 +47,36 @@
                         </div>
                     </div>
                 </div>
-                <center>
-                    <img src="./img/art.svg" class="logo animated jackInTheBox" draggable="false" alt="logo">
+                <center><img src="./img/art.svg" class="logo animated jackInTheBox" draggable="false" alt="logo">
                 </center>
-                <div class="button-group animated fadeIn">
-                    <button class="btn btn-primary u-full-width">Translate</button>
-                    <button class="btn u-full-width">Toggle Live Preview</button>
-                </div>
-                <div class="credits">
-                    <span>Made with ❤️ and ☕, by <a href="http://technocon.xyz" class="link">Team DPS Indore - Utkarsh
-                            Dubey & Bhavesh Pareek</a></span>
-                </div>
+                <div class="credits"><span>Made with ❤️ and ☕, by <a href="http://technocon.xyz" class="link">Team DPS
+                            Indore - Utkarsh Dubey</a></span></div>
             </div>
         </div>
         <div class="six columns execution">
             <div class="container">
                 <div class="form-group">
                     <div class="row">
-                        <div class="two columns">
-                            <img src="./img/boy.png" class="guide" alt="Boy">
-                        </div>
-                        <div class="ten columns">
-                            <textarea class="form-group-textarea u-full-width animated zoomInUp"
-                                placeholder="Type something you'd like to get translated."></textarea>
+                        <div class="two columns"><img src="./img/boy.png" class="guide" alt="Boy"></div>
+                        <div class="ten columns"><textarea class="form-group-textarea u-full-width animated zoomInUp"
+                                placeholder="Type something you'd like to get translated." id="input-get"></textarea>
                         </div>
                     </div>
                     <div class="row">
-                        <div class="ten columns">
-                            <textarea class="form-group-textarea u-full-width animated zoomInUp"
-                                placeholder="Translated text will appear here." disabled="disabled"></textarea>
+                        <div class="ten columns"><textarea class="form-group-textarea u-full-width animated zoomInUp"
+                                placeholder="Translated text will appear here." disabled id="output-get"></textarea>
                         </div>
-                        <div class="two columns">
-                            <img src="./img/alien.png" class="guide" draggable="false" alt="Alien">
-                            <br>
-                            <img src="./img/copy.png" class="copy" draggable="false" data-clipboard-text="Hehe"
-                                alt='Copy'>
-                        </div>
+                        <div class="two columns"><img src="./img/alien.png" class="guide" draggable="false"
+                                alt="Alien"><br><img src="./img/copy.png" class="copy" draggable="false"
+                                data-clipboard-text="Hehe" alt="Copy"></div>
                     </div>
-                    <h3 style="color:white;">
-                        <blockquote>
-                            &quot;Are avesome. You guys zorp.&quot;
-                        </blockquote>
-                        </h1>
+                    <h3 style="color:#fff">
+                        <blockquote>&quot;Are avesome. You guys zorp.&quot;</blockquote>
+                    </h3>
                 </div>
             </div>
         </div>
     </div>
-    <script src="./js/app.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
     <script>
         var typed = new Typed('.hero-typed', {
@@ -109,6 +88,15 @@
             loop: false,
             showCursor: false
         });
+    </script>
+    <script type="module" src="./js/main-c8252d457ae90132cfff.js"></script>
+    <script type="text/javascript" src="./js/main.@legacy-6b58c33928d1cb1af4ad.js" nomodule></script>
+    <script>
+        var input = document.getElementById("input-get"),
+            output = document.getElementById("output-get");
+        input.addEventListener("input", function () {
+            output.value = translate(input.value || "");
+        })
     </script>
 </body>
 
