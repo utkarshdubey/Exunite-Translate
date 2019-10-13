@@ -102,7 +102,7 @@ h1 {
   width: 50px;
   background: white;
   border-radius: 100%;
-  animation: 2s tada infinite;
+  animation: 2s tada;
 }
 
 .shell {
