@@ -171,7 +171,7 @@ input[type="button"].btn-primary:focus {
 
 @media only screen and (min-width: 992px) {
   .credits{
-    padding-top: 30%;
+    padding-top: 25%;
   }
   .awesome{
     padding-top: 60%;
