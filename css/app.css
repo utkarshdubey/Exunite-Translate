@@ -65,7 +65,7 @@ h1 {
   height: 22.5rem;
   box-sizing: border-box;
   border-radius: 15px 50px;
-  padding: 2px 2px 2px 2px;
+  padding: 10px;
 }
 
 .guide {
